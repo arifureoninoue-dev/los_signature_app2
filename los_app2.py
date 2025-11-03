@@ -279,7 +279,7 @@ def generate_pdf():
     line_start_x = pdf.get_x()
     line_end_x = line_start_x + 65
     pdf.line(line_start_x, sig_y_pos + 12, line_end_x, sig_y_pos + 12)
-    pdf.image(temp_signature_path, x=line_start_x + 5, y=sig_y_pos - 8, w=55, h=20) # Y座標を調整
+    pdf.image(temp_signature_path, x=line_start_x + 5, y=sig_y_pos - 10, w=55, h=20) # Y座標を調整
 
     pdf_output = bytes(pdf.output())
 
